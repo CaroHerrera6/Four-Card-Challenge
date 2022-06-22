@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  max-width: 144vw;
+  font-size: 15px;
+  height: 100%;
+  max-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0, 0%, 98%);
+}
+.container {
+  max-width: 100%;
+}
+.text {
+  text-align: center;
+}
+.text h2 {
+  font-size: 28px;
+  max-width: 25%;
+  margin: 2em auto 1em auto;
+  font-weight: 200;
+}
+h2 {
+  color: hsl(234, 12%, 34%);
+}
+.text p {
+  max-width: 35%;
+  margin: 0em auto 3em auto;
+}
+p {
+  font-weight: 400;
+  max-width: 90%;
+  color: hsl(229, 6%, 66%);
+}
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+
+  max-width: 79%;
+}
+.boxes h3 {
+  padding-bottom: 0.4em;
+  color: hsl(234, 12%, 34%);
+}
+.boxes img {
+  max-width: 17%;
+  margin: 3em 0em 0em 17em;
+}
+.green-box,
+.blue-box,
+.yellow-box,
+.red-box {
+  padding: 2em 0em 1em 2em;
+  background-color: white;
+  border-radius: 0.5em;
+  box-shadow: 0 8px 18px 3px rgba(76, 78, 97, 0.13);
+
+  width: 24em;
+}
+.green-box {
+  border-top: 0.2em solid hsl(180, 62%, 55%);
+}
+
+.red-box {
+  border-top: 0.2em solid hsl(0, 78%, 62%);
+}
+
+.yellow-box {
+  border-top: 0.2em solid hsl(34, 97%, 64%);
+}
+
+.blue-box {
+  border-top: 0.2em solid hsl(212, 86%, 64%);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 1em auto;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media screen and (max-width: 375px) {
+  .text {
+    margin: auto auto;
+  }
+  .text h2 {
+    font-size: 15px;
+    max-width: 50%;
+
+    font-weight: 200;
+  }
+  .text p {
+    max-width: 80%;
+    margin: 0em auto 3em auto;
+  }
+  .boxes {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 1em auto 1em auto;
+  }
+
+  .boxes img {
+    padding: 0em 1.5em 1.3em 0em;
+    max-width: 20%;
+  }
+  .boxess h3 {
+    padding: 0;
+  }
+  .green-box,
+  .blue-box,
+  .yellow-box,
+  .red-box {
+    width: 22em;
+    padding: 1.5em 0em 0em 1.2em;
+  }
+  .green-box,
+  .yellow-box {
+    margin-bottom: 1.5em;
+  }
+}
